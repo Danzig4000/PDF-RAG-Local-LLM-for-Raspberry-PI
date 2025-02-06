@@ -19,7 +19,7 @@ app.add_middleware(
 )
 
 UPLOAD_FOLDER = "uploads"
-os.makedirs(UPLOAD_FOLDER, exist_ok=True) 
+os.makedirs(UPLOAD_FOLDER, exist_ok=True) # Make sure correct permissions are set for /uploads
 
 db = chromadb.PersistentClient(path="./vector_db")
 collection = db.get_or_create_collection(name="pdf_data", embedding_function=DefaultEmbeddingFunction())
