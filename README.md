@@ -1,5 +1,4 @@
 # PDF-RAG-Local-LLM-for-Raspberry-PI
-Python, React.js, Axios project for running a local LLM on a Raspberry PI allowing a web interface to upload a small PDF document and run chat based queries against it.
 
 This application allows users to upload a PDF document and ask questions about its contents through a web-based chat interface. It utilizes FastAPI as the backend, React.js for the frontend, and Ollama running Llama3.2 as the local AI model to process queries.
 
