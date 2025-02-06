@@ -11,7 +11,7 @@ function ChatApp() {
     formData.append("file", file);
 
     try {
-      const res = await axios.post("http://192.168.2.16:8000/upload/", formData, {
+      const res = await axios.post("http://localhost:8000/upload/", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       console.log("Upload success:", res.data);
@@ -24,7 +24,7 @@ function ChatApp() {
 
  const sendQuery = async () => {
   try {
-    const response = await axios.post("http://192.168.2.16:8000/query/", { question: query }, {
+    const response = await axios.post("http://localhost:8000/query/", { question: query }, {
       headers: { "Content-Type": "application/json" },
     });
 
@@ -37,7 +37,6 @@ function ChatApp() {
  };
 
 
-  // ? Move JSX return statement outside of sendQuery
   return (
     <div>
       <h2>PDF AI Parser</h2>
