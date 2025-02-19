@@ -2,7 +2,7 @@
 
 This application allows users to upload a PDF document and ask questions about its contents through a web-based chat interface. It utilizes FastAPI as the backend, React.js for the frontend, and Ollama running Llama3.2 as the local AI model to process queries.
 
-🔧 How It Works
+🔧 How It Works:
 
 1️⃣ User Uploads a PDF
 The React frontend allows users to select and upload a PDF.
